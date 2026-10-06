@@ -98,23 +98,9 @@ graph TD
 
 ---
 
-## 3. Academic Laboratory Mapping (IoTCSBCL704)
 
-The features in FOOTPRINT-X correspond directly to the **IoTCSBCL704 Cyber Security & Forensic Analysis Laboratory** curriculum experiments:
 
-| Lab Experiment | Curriculum Title | Tool Feature / Module | Verification Artifact |
-| :--- | :--- | :--- | :--- |
-| **Exp 1** | Information Gathering & Passive Reconnaissance | **Module 1**: Forward DNS (A/AAAA), PTR Reverse Resolution, Mail Exchangers (MX), ip-api.com GeoIP, ASN | Primary IPv4, Lat/Lon Coordinates, Hosting ISP, Autonomous System |
-| **Exp 2** | Footprinting via Search Engines & Public Databases | **Module 3**: Public Certificate Transparency (CT) Log Querying via CRT.sh API, Wildcard Cleanup | Deduplicated Subdomain List, High-Risk Surface Classification (admin/dev/vpn) |
-| **Exp 5** | Web Application Reconnaissance & Banner Grabbing | **Module 2**: HTTP/HTTPS Response Header Inspection, Daemon Profiling, Framework Fingerprinting | `Server` header string, `X-Powered-By` runtime leakage, TLS cipher suite |
-| **Exp 6** | Web Vulnerability Assessment & Security Header Analysis | **Module 2**: Automated Security Header Audit Checklist against OWASP / RFC guidelines | HSTS, CSP, X-Frame-Options, X-Content-Type-Options compliance score |
-| **Exp 7** | Identity & Digital Footprint Correlation | **Module 4**: Cross-Platform Username Correlation (GitHub, Reddit, HackerNews, GitLab, Keybase) | Active developer profiles, public repository metrics, cryptographic PGP status |
-| **Exp 8** | Exposure Risk Scoring & Threat Modeling | **Risk Engine**: CVSS 3.1-Weighted Algorithmic Exposure Metric (0–100 scale) | Categorized Risk Level (Critical/High/Medium/Low), Remediations |
-| **Exp 12** | Formal Audit Reporting & Remediation Documentation | **Export Center**: Printable Institutional Audit Report, Raw JSON artifact, Faculty Signoff block | Formatted printable HTML audit report with student declaration & instructor signature |
-
----
-
-## 4. Installation & Local Setup
+## 3. Installation & Local Setup
 
 ### Prerequisites
 - **Node.js**: v18.0.0 or higher
@@ -153,7 +139,7 @@ The features in FOOTPRINT-X correspond directly to the **IoTCSBCL704 Cyber Secur
 
 ---
 
-## 5. Sample Usage Commands
+## 4. Sample Usage Commands
 
 ### A. Standalone Python CLI Engine
 Students can execute the standalone Python script directly in the terminal without starting the web server:
@@ -207,7 +193,7 @@ curl -s http://localhost:3000/api/lab-curriculum
 
 ---
 
-## 6. Exposure Risk Scoring Methodology (Exp 8)
+## 5. Exposure Risk Scoring Methodology (Exp 8)
 
 The exposure index assesses passive indicators on a scale of **0 (Fully Hardened) to 100 (Critically Exposed)**:
 
@@ -225,7 +211,7 @@ $$\text{Risk Score} = \text{Baseline} (10) + \sum \text{Deficiencies}$$
 
 ---
 
-## 7. Educational Compliance & Ethics
+## 6. Educational Compliance & Ethics
 
 - **Target Authorization:** Always scan assets with explicit permission or use authorized benchmark hosts (`scanme.nmap.org`, `owasp.org`, `wikipedia.org`).
 - **Zero Intrusive Probing:** The tool exclusively reads passive public records (DNS, public CT ledgers, public social endpoints, standard HTTP headers). No port flooding, brute-forcing, or exploit payloads are executed.
