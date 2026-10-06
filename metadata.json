@@ -1,0 +1,6 @@
+{
+  "name": "FOOTPRINT-X: Digital Footprint & Surface Exposure Analyzer",
+  "description": "Academic OSINT surface exposure and digital footprint reconnaissance dashboard for IoTCSBCL704 cyber-security laboratory experiments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
